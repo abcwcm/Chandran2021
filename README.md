@@ -13,3 +13,5 @@ This repository contains the code that was developed to process and analyze comb
 
 The code deposited here was written by Friederike Dündar at the [Applied Bioinformatics Core](https://abc.med.cornell.edu) of Weill Cornell Medicine.
 Don't hesitate to get in touch with questions either via the issues panel here or via `abc -at- med.cornell.edu`.
+
+![](https://raw.githubusercontent.com/abcwcm/Scott2019/master/WCM_MB_LOGO_HZSS1L_CLR_RGB.png)
