@@ -1,8 +1,15 @@
-# SIFT-seq: VDJ and scRNA-seq of T cells targeting public neoantigens
+# Stimulation Induced Functional TCR sequencing (SIFT-seq): VDJ and scRNA-seq of T cells targeting public neoantigens
 
->GEO accession number: GSE172403 -- for processed data, see the individual donor's R packages
+*Herein, we report the development and application of a high-throughput platform that combines single-cell transcriptomic and paired alpha/beta T cell receptor (TCR) sequencing to test whether Mut PIK3CA generates an immunogenic public NeoAg. Using this method, we developed a panel of TCRs that recognize an endogenously processed neoepitope resulting from a common PIK3CA hotspot mutation.*
 
-Naïve CD8+ T cells from healthy donor samples were stimulated in vitro with mutated PIK3CA. Following a qPCR screen to identify mutation-specific upregulation of inflammatory transcript, positive wells were selcted for SIFT-seq. Matched aliquots were restimulated acutely with antigen-presenting wells expressing WT or mutated PIK3CA and subject to single-cell RNA-seq and V(D)J immunoprofiling using the 10x genomics platform. All clonotypes associated with a mutation-specific activation signature were identified and their TCR gene sequences were retrieved. Candidate TCR gene sequences were retrovirally transferred to open-repertoire T cell to confirm mutation-specific recognition.
+The platform developed by the Klebanoff Lab entails the following steps:
+
+1. naive T cells (TN) from a healthy donor undergo in vitro sensitization (IVS) with autologous monocyte-derived dendritic cells (moDCs) electroporated with mRNA encoding the Mut driver gene. HD T cells are selected to ensure sampling of a broad TCR repertoire that has not been exposed to the potentially tolerogenic environment present within cancer patients.
+2. Matched aliquots from sensitized wells are re-stimulated with moDCs expressing the Mut or wildtype (WT) version of the driver gene. Cycle threshold (Ct) values, which inversely correlate with transcript abundance, are measured for the gene encoding IFNG using qPCR. A regression analysis is then performed to identify "hit" wells containing Mut-specific T cells that show higher activation levels in the presence of the mutated antigen compared to the WT antigen.
+3. T cells from "hit" wells are again acutely re-stimulated with moDCs to identify reactive clonotypes and retrieve their TCR gene sequences. This step, which we have termed Stimulation Induced Functional TCR sequencing (SIFT-seq), is accomplished using combined single-cell (sc) TCR V(D)J and RNA sequencing. 
+4. Finally, TCR clonotypes that selectively express T cell activation transcripts in response to a Mut variant of the driver but not its WT counterpart are reconstructed for functional validation. 
+
+--------------------------------------
 
 This repository contains the code that was used to generate draft versions of the figures shown in the final manuscript. 
 For reasons of legibility, most final figures based on single-cell RNA-seq data were generated in GraphPad Prism; you can find the corresponding data files (text files, spread sheets) here as well. 
@@ -22,6 +29,8 @@ In brief, the steps were:
 4. determine additional genes that are differentially expressed when comparing the cells of the MUT-antigen condition to the cells of the WT-antigen condition from the same clonotype.
 
 To run the code of the figures, you'll need to **download and install these packages** as they come with their own functions to access the data for each donor.
+
+For the raw data (i.e. CellRanger output, see GEO accession number: GSE172403).
 
 ![](https://raw.githubusercontent.com/abcwcm/Scott2019/master/WCM_MB_LOGO_HZSS1L_CLR_RGB.png)
 
