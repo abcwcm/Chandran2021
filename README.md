@@ -16,9 +16,11 @@ For reasons of legibility, most final figures based on single-cell RNA-seq data 
 
 The basis for the figures is the **processed scRNA-seq/VDJ-seq data**, for which we have generated **one R package per patient/donor**.
 
-* **21LT2**: [R package repo](https://github.com/abcwcm/Klebanoff21LT2) [![DOI](https://zenodo.org/badge/465661359.svg)](https://zenodo.org/badge/latestdoi/465661359)
-* **0606T1**: [R package repo](https://github.com/abcwcm/Klebanoff0606T1) [![DOI](https://zenodo.org/badge/465691691.svg)](https://zenodo.org/badge/latestdoi/465691691)
-* **MR4050** (MK_02 in the paper): [R package repo](https://github.com/abcwcm/KlebanoffMR4050) [![DOI](https://zenodo.org/badge/465693977.svg)](https://zenodo.org/badge/latestdoi/465693977)
+| Sample name | Link to repo | Zenodo release |
+|---------|-------------------|----------------|
+| **21LT2** | [R package repo](https://github.com/abcwcm/Klebanoff21LT2) | [![DOI](https://zenodo.org/badge/465661359.svg)](https://zenodo.org/badge/latestdoi/465661359) |
+| **0606T1** | [R package repo](https://github.com/abcwcm/Klebanoff0606T1) | [![DOI](https://zenodo.org/badge/465691691.svg)](https://zenodo.org/badge/latestdoi/465691691) |
+| **MR4050** (MK_02 in the paper) | [R package repo](https://github.com/abcwcm/KlebanoffMR4050) | [![DOI](https://zenodo.org/badge/465693977.svg)](https://zenodo.org/badge/latestdoi/465693977) |
 
 These packages contain all code for the processing and analysis of the **combined single-cell RNA-seq and single-cell TCR-seq** samples, details can be found in the vignettes of each package.
 In brief, the steps were:
