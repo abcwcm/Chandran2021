@@ -32,6 +32,13 @@ For each patient's data set (0606T1, 21LT2, MR4050/MK_02), there's a separate R
 package that contains the processed data as well as the code details of how that
 data was generated (check out the vignettes for that).
 
+```{r eval=FALSE}
+## install patient-specific data packages
+devtools::install_github("abcwcm/Klebanoff21LT2")
+devtools::install_github("abcwcm/Klebanoff0606T1")
+devtools::install_github("abcwcm/KlebanoffMR4050")
+```
+
 Here, we show how the figures shown in the SIFT-seq manuscript were generated although the
 final-final versions that made it into the paper were also done with GraphPadPrism for
 reasons of legibility. 
@@ -216,7 +223,7 @@ ggplot(t06.summ0, aes(x = id.sort, y = logFC)) + ## DF
 >mutation-reactive TCRs can be identified by normalized IFNG signal comparisons between MUT and WT stimulated conditions
 
 - ExtFig 3: 21LT1
-- ExtFig 4: 0606T1: 
+- ExtFig 4: 0606T1
 
 ```{r boxplots_21LT2, fig.height = 18}
 t21  <- Klebanoff0606T1::prep_data4tgram(sce.21, 
